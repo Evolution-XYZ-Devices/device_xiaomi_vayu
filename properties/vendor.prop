@@ -161,6 +161,9 @@ ro.vendor.audio.soundtrigger.xatx.vop.level.medium=10
 # PASR
 vendor.power.pasr.enabled=false
 
+# Perf
+ro.vendor.extension_library=libqti-perfd-client.so
+
 # Radio/RIL
 persist.radio.multisim.config=dsds
 persist.vendor.data.iwlan.enable=true

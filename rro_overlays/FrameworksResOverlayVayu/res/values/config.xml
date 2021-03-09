@@ -797,4 +797,7 @@
         <item>"com.vanced.android.youtube"</item>
         <item>"com.vanced.android.apps.youtube.music"</item>
     </string-array>
+
+    <!-- Whether Hearing Aid profile is supported -->
+    <bool name="config_hearing_aid_profile_supported">true</bool>
 </resources>

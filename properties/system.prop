@@ -33,10 +33,11 @@ vendor.iop.enable_prefetch_ofr=1
 vendor.iop.enable_uxe=0
 
 # Media
-media.settings.xml=/vendor/etc/media_profiles_vendor.xml
-media.stagefright.thumbnail.prefer_hw_codecs=true
-vendor.mm.enable.qcom_parser=131071999
-debug.stagefright.ccodec=1
+debug.media.codec2=2 
+debug.stagefright.ccodec=4
+debug.stagefright.omx_default_rank=512
+debug.stagefright.c2inputsurface=-1
+vendor.media.omx=0
 
 # Memory optimizations
 ro.vendor.qti.sys.fw.bservice_enable=true

@@ -2,6 +2,12 @@
 /dev/socket/audio_hw_socket                                             u:object_r:audio_socket:s0
 /sys/devices/platform/soc/a8c000.i2c/i2c-2/2-005a/f0_value              u:object_r:vendor_sysfs_audio:s0
 
+# Bluetooth
+/vendor/bin/init\.mi\.btmac\.sh                                         u:object_r:vendor_qti_init_shell_exec:s0
+
+# Boot devices
+/dev/block/platform/soc/1d84000.ufshc/by-name/vendor_boot_[ab]          u:object_r:boot_block_device:s0
+
 # Camera
 /mnt/vendor/persist/camera(/.*)?                                        u:object_r:camera_persist_file:s0
 /vendor/bin/remosaic_daemon                                             u:object_r:remosaic_daemon_exec:s0
@@ -10,19 +16,18 @@
 /vendor/bin/batterysecret                                               u:object_r:batterysecret_exec:s0
 
 # Display
-/sys/devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/smart_fps_value           u:object_r:vendor_sysfs_smart_fps:s0
-/sys/devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/dynamic_fps               u:object_r:vendor_sysfs_dynamic_fps:s0
-
-# EFS Block devices
-/dev/block/sde[0-9]+                                                    u:object_r:efs_block_device:s0
-/dev/block/sdf[0-9]+                                                    u:object_r:efs_block_device:s0
+/sys/devices/platform/soc/[a-z0-9]+.qcom,mdss_mdp/drm/card([0-3])+/card([0-3])+-DSI-1/disp_param        u:object_r:vendor_sysfs_graphics:s0
+/sys/devices/platform/soc/[a-z0-9]+.qcom,mdss_mdp/drm/card([0-3])+/card([0-3])+-DSI-1/dynamic_fps       u:object_r:vendor_sysfs_graphics:s0
+/sys/devices/platform/soc/[a-z0-9]+.qcom,mdss_mdp/drm/card([0-3])+/card([0-3])+-DSI-1/hbm_status        u:object_r:vendor_sysfs_graphics:s0
+/sys/devices/platform/soc/[a-z0-9]+.qcom,mdss_mdp/drm/card([0-3])+/card([0-3])+-DSI-1/panel_info        u:object_r:vendor_sysfs_graphics:s0
+/sys/devices/platform/soc/[a-z0-9]+.qcom,mdss_mdp/drm/card([0-3])+/card([0-3])+-DSI-1/smart_fps_value   u:object_r:vendor_sysfs_graphics:s0
 
 # Elliptic
 /dev/elliptic[0-9]                                                      u:object_r:ultrasound_device:s0
 /dev/mius(.*)?                                                          u:object_r:ultrasound_device:s0
 
 # Fingerprint
-/vendor/bin/hw/android\.hardware\.biometrics\.fingerprint@2.1-service\.vayu           u:object_r:hal_fingerprint_default_exec:s0
+/vendor/bin/hw/android\.hardware\.biometrics\.fingerprint@2.1-service\.vayu                             u:object_r:hal_fingerprint_default_exec:s0
 
 # Fingerprint - devices
 /dev/goodix_fp                                                          u:object_r:fingerprint_device:s0
@@ -39,18 +44,13 @@
 /mnt/vendor/dsp/fastrpc_shell_3                                         u:object_r:public_adsprpcd_file:s0
 
 # FPS Info
-/sys/class/drm/sde-crtc-0/measured_fps                         u:object_r:vendor_sysfs_graphics:s0
-
-# Graphics nodes
-/sys/devices/platform/soc/[a-z0-9]+.qcom,mdss_mdp/drm/card([0-3])+/card([0-3])+-DSI-1/panel_info        u:object_r:vendor_sysfs_graphics:s0
-/sys/devices/platform/soc/[a-z0-9]+.qcom,mdss_mdp/drm/card([0-3])+/card([0-3])+-DSI-1/disp_param        u:object_r:vendor_sysfs_graphics:s0
-/sys/devices/platform/soc/[a-z0-9]+.qcom,mdss_mdp/drm/card([0-3])+/card([0-3])+-DSI-1/hbm_status        u:object_r:vendor_sysfs_graphics:s0
+/sys/class/drm/sde-crtc-0/measured_fps                                  u:object_r:vendor_sysfs_graphics:s0
 
 # Health
-/sys/devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pm8150b@2:qcom,qpnp-smb5/power_supply/wireless(/.*)?         u:object_r:sysfs_wireless_supply:s0
+/sys/devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pm8150b@2:qcom,qpnp-smb5/power_supply/wireless(/.*)?             u:object_r:sysfs_wireless_supply:s0
 
 # Haptic
-/sys/module/qti_haptics/parameters/level                       u:object_r:sysfs_vibrator:s0
+/sys/module/qti_haptics/parameters/level                                u:object_r:sysfs_vibrator:s0
 
 # IR
 /dev/ir_spi                                                             u:object_r:lirc_device:s0
@@ -62,7 +62,7 @@
 /sys/devices/platform/soc/[a-z0-9]+.i2c/i2c-[0-9]/[0-9]-[0-9]+/leds(/.*)?                                                                           u:object_r:sysfs_leds:s0
 
 # Lights
-/vendor/bin/hw/android\.hardware\.lights-service\.vayu                                         u:object_r:hal_light_default_exec:s0
+/vendor/bin/hw/android\.hardware\.lights-service\.vayu                  u:object_r:hal_light_default_exec:s0
 
 # Mlipay
 /vendor/bin/mlipayd@1\.1                                                u:object_r:hal_mlipay_default_exec:s0
@@ -71,16 +71,16 @@
 /mnt/vendor/persist/subsys(/.*)?                                        u:object_r:persist_subsys_file:s0
 
 # Power Stats HAL
-/vendor/bin/hw/android\.hardware\.power\.stats@1\.0-service\.mock                                       u:object_r:hal_power_stats_default_exec:s0
+/vendor/bin/hw/android\.hardware\.power\.stats@1\.0-service\.mock       u:object_r:hal_power_stats_default_exec:s0
 
 # Sensors
-/dev/akm09970                                                                                                                   u:object_r:hall_device:s0
-/sys/bus/iio/devices                                                                                                            u:object_r:vendor_sysfs_iio:s0
-/sys/devices/platform/us_prox.0/iio:device3(/.*)?                                                                               u:object_r:vendor_sysfs_iio:s0
-/sys/devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pm8150b@2:vadc@3100/iio:device1(/.*)?        u:object_r:vendor_sysfs_iio:s0
+/dev/akm09970                                                                                                                                       u:object_r:hall_device:s0
+/sys/bus/iio/devices                                                                                                                                u:object_r:vendor_sysfs_iio:s0
+/sys/devices/platform/us_prox.0/iio:device3(/.*)?                                                                                                   u:object_r:vendor_sysfs_iio:s0
+/sys/devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-02/c440000.qcom,spmi:qcom,pm8150b@2:vadc@3100/iio:device1(/.*)?                            u:object_r:vendor_sysfs_iio:s0
 
 # SSR
-/sys/devices(/platform)?/soc/[a-z0-9\.:]+,[a-z0-9\-\_]+/subsys[0-9]+/name         u:object_r:vendor_sysfs_ssr:s0
+/sys/devices(/platform)?/soc/[a-z0-9\.:]+,[a-z0-9\-\_]+/subsys[0-9]+/name                                                                           u:object_r:vendor_sysfs_ssr:s0
 
 # Thermal
 /vendor/bin/mi_thermald                                                 u:object_r:mi_thermald_exec:s0

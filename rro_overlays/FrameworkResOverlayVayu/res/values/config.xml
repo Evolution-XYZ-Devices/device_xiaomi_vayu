@@ -791,4 +791,7 @@
          fall asleep again as soon as it is awoken.
     -->
     <integer name="config_minimumScreenOffTimeout">7000</integer>
+
+    <!-- Whether device supports an gaming mode profiles -->
+    <bool name="config_gamingmode_performance">true</bool>
 </resources>

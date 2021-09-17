@@ -779,4 +779,7 @@
     <string name="config_adaptiveChargingSysfsNode" translatable="false">/sys/class/power_supply/battery/input_suspend</string>
     <string name="config_adaptiveChargingSuspendValue" translatable="false">1</string>
     <string name="config_adaptiveChargingResumeValue" translatable="false">0</string>
+
+    <!-- If true, the screen can be rotated via the accelerometer in all 4 rotations as the default behavior. -->
+    <bool name="config_allowAllRotations">true</bool>
 </resources>

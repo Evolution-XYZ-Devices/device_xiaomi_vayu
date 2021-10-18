@@ -176,6 +176,9 @@ persist.vendor.radio.redir_party_num=1
 persist.vendor.radio.sar_sar_sensor=true
 ro.telephony.iwlan_operation_mode=legacy
 
+# System
+persist.sys.binary_xml=false
+
 # System Shutdown
 sys.vendor.shutdown.waittime=500
 

@@ -24,9 +24,7 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.set_idle_timer_ms=500 \
     ro.surface_flinger.set_touch_timer_ms=750 \
     ro.surface_flinger.use_color_management=true \
-    ro.surface_flinger.use_content_detection_for_refresh_rate=true \
-    vendor.display.idle_time=0 \
-    vendor.display.idle_time_inactive=0
+    ro.surface_flinger.use_content_detection_for_refresh_rate=true
 
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     debug.sf.early_app_phase_offset_ns=500000 \

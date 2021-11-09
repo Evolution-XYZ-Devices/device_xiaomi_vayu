@@ -27,7 +27,6 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.use_content_detection_for_refresh_rate=true
 
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-    debug.sf.enable_advanced_sf_phase_offset=1 \
     debug.sf.use_phase_offsets_as_durations=1 \
     debug.sf.late.sf.duration=10500000 \
     debug.sf.late.app.duration=20500000 \

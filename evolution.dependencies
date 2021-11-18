@@ -11,4 +11,8 @@
     "repository": "android_kernel_xiaomi_vayu",
     "target_path": "kernel/xiaomi/vayu"
   }
+  {
+    "repository": "android_hardware_xiaomi",
+    "target_path": "hardware/xiaomi"
+  }
 ]

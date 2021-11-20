@@ -21,17 +21,6 @@
          have distinct intensity levels -->
     <bool name="config_vibration_supports_multiple_intensities">true</bool>
 
-    <!-- Adaptive Charging -->
-    <bool name="config_supportAdaptiveCharging">true</bool>
-  
-    <!-- For Enabling Battery Heath -->
-    <bool name="config_supportBatteryHealth">true</bool>
-
-    <!-- Battery Health -->
-    <string name="config_batDesCap">/sys/class/power_supply/bms/charge_full_design</string>
-    <string name="config_batCurCap">/sys/class/power_supply/bms/charge_full</string>
-    <string name="config_batChargeCycle">/sys/class/power_supply/bms/cycle_count</string>
-
     <!-- Device specific Doze Package -->
     <string name="config_customDozePackage">org.lineageos.settings/org.lineageos.settings.doze.DozeSettingsActivity</string>
 </resources>

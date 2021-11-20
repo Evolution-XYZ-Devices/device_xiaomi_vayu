@@ -19,12 +19,16 @@
     <!-- The padding on the side of the navigation bar. Must be greater than or equal to
          navigation_extra_key_width -->
     <dimen name="navigation_side_padding">85.0dip</dimen>
-    <!-- the padding on the top of the statusbar (usually 0) -->
+
+    <!-- The padding on the top of the statusbar (usually 0) -->
     <dimen name="status_bar_padding_top">8dp</dimen>
-    <!-- the padding on the start of the statusbar -->
+
+    <!-- The padding on the start of the statusbar -->
     <dimen name="status_bar_padding_start">12dp</dimen>
-    <!-- the padding on the end of the statusbar -->
+
+    <!-- The padding on the end of the statusbar -->
     <dimen name="status_bar_padding_end">12dp</dimen>
-    <!-- rounded corner content padding -->
+
+    <!-- Rounded corner content padding -->
     <dimen name="rounded_corner_content_padding">7.0dip</dimen>
 </resources>

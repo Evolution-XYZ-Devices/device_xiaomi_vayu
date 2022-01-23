@@ -184,6 +184,7 @@ PRODUCT_COPY_FILES += \
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.4-service.clearkey \
+    android.hardware.drm@1.3-service.widevine-vayu.rc \
     android.hardware.drm@1.3.vendor
 
 # Fastbootd
@@ -335,7 +336,8 @@ PRODUCT_PACKAGES += \
     libavservices_minijail.vendor \
     libavservices_minijail_vendor \
     libcodec2_hidl@1.0.vendor \
-    libcodec2_vndk.vendor
+    libcodec2_vndk.vendor \
+    vendor.qti.media.c2@1.0-service-vayu.rc
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
@@ -365,6 +367,7 @@ PRODUCT_PACKAGES += \
 
 # NeuralNetworks
 PRODUCT_PACKAGES += \
+    android.hardware.neuralnetworks@1.3-service-qti-vayu.rc \
     android.hardware.neuralnetworks@1.3.vendor
 
 # NFC

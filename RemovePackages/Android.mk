@@ -18,7 +18,7 @@ LOCAL_OVERRIDES_PACKAGES := \
     Drive \
     GCS \
     GoogleCamera \
-    GrapheneOS-Camera \
+    GoogleCameraGo \
     Maps \
     Music \
     MyVerizonServices \

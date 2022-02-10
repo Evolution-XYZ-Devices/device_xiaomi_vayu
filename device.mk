@@ -109,8 +109,7 @@ PRODUCT_PACKAGES += \
     libdng_sdk.vendor \
     libgui_vendor \
     libxml2 \
-    vendor.qti.hardware.camera.postproc@1.0.vendor \
-    GoogleCameraGo
+    vendor.qti.hardware.camera.postproc@1.0.vendor
 
 PRODUCT_PACKAGES += \
     libshim_megvii

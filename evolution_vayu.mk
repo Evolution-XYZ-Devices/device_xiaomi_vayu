@@ -17,6 +17,7 @@ $(call inherit-product, vendor/evolution/config/common_full_phone.mk)
 # Evolution-X stuff.
 EVO_BUILD_TYPE := OFFICIAL
 TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_BUILD_GRAPHENEOS_CAMERA := true
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := evolution_vayu

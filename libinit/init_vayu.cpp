@@ -124,8 +124,8 @@ void set_device_props(const std::string fingerprint, const std::string descripti
 
 void vendor_load_properties() {
 //  SafetyNet workaround
-    char const fp[] = "google/redfin/redfin:12/SQ1A.220105.002/7961164:user/release-keys";
-    char const fp_desc[] = "redfin-user 12 SQ1A.220105.002 7961164 release-keys";
+    char const fp[] = "Xiaomi/vayu_global/vayu:11/RKQ1.200826.002/V12.5.7.0.RJUMIXM:user/release-keys";
+    char const fp_desc[] = "vayu_global-user 11 RKQ1.200826.002 V12.5.7.0.RJUMIXM release-keys";
 
     string region = android::base::GetProperty("ro.boot.hwc", "");
 

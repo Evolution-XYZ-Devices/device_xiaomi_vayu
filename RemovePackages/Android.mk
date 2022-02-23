@@ -7,7 +7,6 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_OVERRIDES_PACKAGES := \
     AmbientSensePrebuilt \
     arcore \
-    Camera2 \
     Chrome \
     Chrome-Stub \
     ConnMO \
@@ -19,6 +18,7 @@ LOCAL_OVERRIDES_PACKAGES := \
     GCS \
     GoogleCamera \
     GoogleCameraGo \
+    GrapheneOS-Camera \
     Maps \
     Music \
     MyVerizonServices \

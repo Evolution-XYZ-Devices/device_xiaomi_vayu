@@ -1,6 +1,6 @@
 # Device Tree for Poco X3 Pro
 
-Poco X3 Pro (codename: "vayu") is a high-end smartphone from POCO. It was announced and released in March 2021.
+Poco X3 Pro (codename: "vayu") is a mid-range smartphone from POCO. It was announced and released in March 2021.
 
 ## Device information
 
@@ -8,7 +8,7 @@ Poco X3 Pro (codename: "vayu") is a high-end smartphone from POCO. It was announ
 | :---------------------- | :-------------------------------------------------------------------------------------------------------|
 | Chipset                 | Qualcomm Snapdragon 860 (7 nm)                                                                          |
 | CPU                     | Octa-core (1x2.96 GHz Kryo 485 Gold & 3x2.42 GHz Kryo 485 Gold & 4x1.78 GHz Kryo 485 Silver)            |
-| GPU                     | Adreno 640                                                                                              |
+| GPU                     | Adreno 640 (257 - 675MHz)                                                                               |
 | Shipped Android Version | Android 11 with MIUI 12 for POCO                                                                        |
 | SIM                     | Hybrid Dual SIM (Nano-SIM, dual stand-by)                                                               |
 | Memory                  | 6 GB / 8 GB LPDDR4X RAM                                                                                 |
